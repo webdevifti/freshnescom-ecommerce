@@ -1,0 +1,354 @@
+.main-content{
+  .banner__section,.best__selling__section,.form__farmers__section{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0px;
+    &__left__side{
+      width: 20%;
+      .left__menus{
+        
+        ul{
+      
+          li{
+            a{
+              color: $primaryColor;
+              text-decoration: underline;
+              font-size: 14px;
+              font-weight: 400;
+              font-family: $secondaryFont;
+              margin: 20px 0px;
+              display: block;
+            }
+          }
+          
+        }
+        .btn-more{
+            display: flex;
+            align-items: center;
+            width: 200px;
+            background-color: $grayColor;
+            font-weight: 700;
+            border-radius: 10px;
+            padding: 10px 15px;
+            margin: 20px 0px;
+            color: $secondaryColor;
+            font-family: $primaryFont;
+          }
+      }
+    }
+    &__right__side{
+      width: 78%;
+
+      .banner__area{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .banner__card{
+          background-image: url('../assets/images/freddy_patroon.png');
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 420px;
+          height: 280px;
+          box-shadow: -1px 2px 9px #d1d1d1;
+          border-radius: 10px;
+          &__inner{
+            padding: 40px 20px;
+            p{
+              color: $primaryColor;
+              font-size: 14px;
+              font-family: $primaryFont;
+              font-weight: 600;
+            }
+            h1{
+              margin-bottom: 120px;
+              font-family: $secondaryFont;
+            }
+            a{
+              border: 2px solid $primaryColor;
+              padding: 12px 24px;
+              border-radius: 10px;
+              color: $secondaryColor;
+              font-weight: 700;
+              font-family: $primaryFont;
+              display: flex;
+              align-items: center;
+              width: 200px;
+            }
+          }
+        }
+      }
+      .products-area{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .single-product{
+          width: 269px;
+          height: 323px;
+          // margin: 0px 20px;
+          padding: 10px;
+          border: 1px solid $borderColor;
+          border-radius: 10px;
+          .product-header{
+            position: relative;
+            span{
+              position: absolute;
+              top: 5%;
+              left: 5%;
+              font-size: 12px;
+              font-weight: 600;
+              font-family: $primaryFont;
+              color: $primaryColor;
+            }
+          }
+          .single-product-footer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .product-price{
+            h2{
+              font-size: 18px;
+              font-family: $primaryFont;
+            }
+          }
+          h3{
+            font-size: 15px;
+            font-weight: 500;
+            font-family: $primaryFont;
+          }
+          img{
+            width: 100%;
+          }
+          del{
+            color: #aaa;
+            font-size: 12px;
+            font-family: $primaryFont;
+          }
+          p{
+            color: #aaa;
+            font-family: $secondaryFont;
+            font-size: 12px;
+            margin: 10px 0px;
+          }
+         
+        }
+      }
+    }
+
+  }
+}
+
+.section__headline{
+  .headline-heading{
+    display: flex;
+    justify-content: space-between;
+    h3{
+      font-family: $primaryFont;
+      font-size: 15px;
+      font-weight: 600;
+    }
+     a{
+       display: flex;
+       align-items: center;
+       font-size: 15px;
+       font-family: $primaryFont;
+       font-weight: 700;
+       color: $secondaryColor;
+     }
+  }
+  .headline__products{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0px;
+      .single-product{
+        width: 269px;
+        height: 323px;
+        // margin: 0px 20px;
+        padding: 10px;
+        border: 1px solid $borderColor;
+        border-radius: 10px;
+        .product-header{
+          position: relative;
+          span{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            font-size: 12px;
+            font-weight: 600;
+            font-family: $primaryFont;
+            color: $primaryColor;
+          }
+        }
+        .single-product-footer{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .product-price{
+          h2{
+            font-size: 18px;
+            font-family: $primaryFont;
+          }
+        }
+        h3{
+          font-size: 15px;
+          font-weight: 500;
+          font-family: $primaryFont;
+        }
+        img{
+          width: 100%;
+        }
+        del{
+          color: #aaa;
+          font-size: 12px;
+          font-family: $primaryFont;
+        }
+        p{
+          color: #aaa;
+          font-family: $secondaryFont;
+          font-size: 12px;
+          margin: 10px 0px;
+        }
+       
+      }
+    }
+}
+.home__blog_section{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .home__blogs{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+    .home__blogs_left{
+      width: 38%;
+      .home__blogs__left__card{
+        position: relative;
+        .blog_header_content{
+          img{
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+          }
+          .category{
+            color: $primaryColor;
+            font-weight: 600;
+            background: #F4F8EC;
+            border-radius: 5px;
+            padding: 3px;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+          }
+        }
+        .blog_bottom_content{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          z-index: 1;
+          height: 200px;
+          padding-top: 50px;
+          padding-right: 30px;
+          padding-left: 30px;
+          background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+          // padding: 10px;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+
+          h3{
+            color: #fff;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 33px;
+            font-family: $primaryFont;
+          }
+          .blog_bottom_content_footer{
+            display: flex;
+            align-items: center;
+            margin: 10px 0px;
+            img{
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              margin-right: 6px;
+            }
+            span{
+              font-size: 12px;
+              color: #fff;
+              font-family: $secondaryFont;
+              margin: 0px 6px;
+            }
+          }
+        }
+      }
+    }
+    .home__blogs_middle{
+      width: 25%;
+      img{
+        border-radius: 10px;
+      }
+      h3{
+        font-family: $primaryFont;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+      }
+      .blog_middle_footer{
+        display: flex;
+        align-items: center;
+        span{
+          color: $secondaryFont;
+          font-family: $secondaryFont;
+          font-size: 12px;
+          margin: 0px 6px;
+
+          &:first-child{
+            margin: 0;
+          }
+        }
+      }
+      .category{
+        color: $primaryColor;
+        font-weight: 600;
+        background: #F4F8EC;
+        border-radius: 5px;
+        padding: 3px;
+        margin: 5px 0px;
+        display: inline-block;
+      }
+    }
+    .home__blogs__right{
+      width: 33%;
+      .home__blogs_right_content{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      .home__blogs__right__inner_left{
+        h3{
+          font-size: 15px;
+          font-family: $primaryFont;
+          line-height: 22px;
+          font-weight: 500;
+        }
+        span{
+          color: $secondaryColor;
+          font-family:$secondaryFont;
+          font-size: 12px;
+          margin: 5px;
+        }
+      }
+      img{
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+      }
+    }
+  }
+}

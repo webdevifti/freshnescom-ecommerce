@@ -1,0 +1,198 @@
+header {
+  // nav top style
+  .nav__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 0;
+    border-bottom: 1px solid $grayColor;
+
+    &__left {
+      display: flex;
+      align-items: center;
+      li {
+        margin-right: 30px;
+        a {
+          color: $secondaryColor;
+          font-size: 12px;
+          transition: 0.3s;
+          &:hover {
+            color: $primaryColor;
+          }
+        }
+      }
+    }
+
+    &__right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        margin-left: 30px;
+        a {
+          color: $secondaryColor;
+          font-size: 12px;
+          transition: 0.3s;
+          &:hover {
+            color: $primaryColor;
+          }
+        }
+      }
+    }
+  }
+
+  // nav middle style
+  .nav__middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0px;
+
+    .search__bar{
+      form{
+        display: flex;
+        width: 500px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $grayColor;
+        padding: 4px;
+        border-radius: 10px;
+        border: 1px solid $borderColor;
+
+        .seperator{
+          color: $borderColor;
+        }
+        select{
+          font-weight: bold;
+         
+        }
+        select,
+        input{
+          border: none;
+          outline: none;
+          margin: 0px 5px; 
+          background-color: transparent;
+          padding: 5px 0px;
+          font-size: 14px;
+          border-radius: 5px;
+        }
+        input{
+          width: 100%;
+        }
+        .search-btn{
+          background-color: transparent;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          font-size: 8px;
+        }
+      }
+    }
+    .user-menu{
+      .btn-user-icon,
+      .btn-cart-icon{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: $secondaryColor;
+        cursor: pointer;
+      }
+      .btn-cart-icon{
+        position: relative;
+        text-align: center;
+        margin-left: 40px;
+      }
+      .cart-counter{
+        display: inline-block;
+        background-color: #E5704B;
+        color: #fff;
+        min-height: 16px;
+        min-width: 16px;
+        border-radius: 50%;
+        line-height: 16px;
+        text-align: center;
+        position: absolute;
+        bottom: -7%;
+        left: -40%;
+        z-index: 1;
+      }
+    }
+  }
+
+  .nav__bottom{
+    background-color: $grayColor;
+  
+    &__main__menu{
+      display: flex;
+      align-items: center;
+
+      li{
+        margin: 0px 20px;
+        position: relative;
+        display: block;
+        // &:first-child{
+        //   margin: 0;
+        // }
+        transition: 0.6s;
+        &:hover .dropdown{
+          display: block;
+
+        }
+        &:first-child{
+          margin: 0;
+        }
+        a{
+          font-weight: 600;
+          font-size: 15px;
+          color: $secondaryColor;
+          line-height: 22px;
+          display: block;
+          padding: 10px 0px;
+          font-family: $primaryFont;
+          display: flex;
+          align-items: center;
+          
+          span{
+            color: $primaryColor;
+          }
+
+          &:hover{
+            color: $primaryColor;
+          }
+        }
+        .dropdown{
+          background-color: $primaryColor;
+          min-width: 200px;
+          position: absolute;
+          display: none;
+          animation: growDown 350ms ease-in-out forwards;
+          transform-origin: top center;
+          z-index: 999;
+          
+          li{
+            margin: 0;
+            a{
+              color: #fff;
+              padding: 12px 10px;
+              &:hover{
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.cart-popup{
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

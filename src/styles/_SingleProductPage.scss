@@ -1,0 +1,257 @@
+.product__details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    .product__image__section{
+        width: 48%;
+        img{
+            margin: 15px 0px;
+        }
+        .img-1{
+            position: relative;
+           
+            .op{
+                position: absolute;
+                top: 10%;
+                left: 5%;
+                
+
+                span{
+                    background-color: #F4F8EC;
+                    margin: 0px 10px;
+                    color: $primaryColor;
+                    font-weight: 600;
+                    font-family: $primaryFont;
+                    border-radius: 10px;
+                    padding: 5px 9px;
+                    font-size: 12px;
+
+                    &:first-child{
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+    }
+    .product_information_section{
+        width: 48%;
+        .product_name{
+            color: $secondaryColor;
+            font-family: $primaryFont;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 45px;
+        }
+        .top-review{
+            display: flex;
+            align-items: center;
+            span{
+                color: $ratingColor;
+            }
+            .review-count{
+                text-decoration: underline;
+                color: $lightColor;
+                font-size: 12px;
+                font-family: $secondaryFont;
+                line-height: 16px;
+            }
+        }
+        .single-product-description{
+            margin: 25px 0px;
+            p{
+                font-family: $secondaryFont;
+                font-size: 17px;
+                line-height: 23px;
+                font-weight: normal;
+                font-style: normal;
+                text-align: justify;
+
+            }
+        }
+        .products-metadata{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0px;
+            .data{
+               width: 40%;
+
+                div{
+                   display: flex;
+                   align-items: center;
+                   justify-content: space-between;
+                    color: $lightColor;
+                    margin: 12px 0px;
+                    span{
+                        color: $secondaryColor;
+                        font-family: $secondaryFont;
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
+                }
+            }
+        }
+        .add-to-cart-area{
+            border: 1px solid $borderColor;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .price-area{
+                h3{
+                    color: $primaryColor;
+                    font-family: $primaryFont;
+                    font-weight: 600;
+                    font-size: 26px;
+                    line-height: 39px;
+                }
+                del{
+                    font-family: $primaryFont;
+                    color: $lightColor;
+                    font-size: 12px;
+                    line-height: 18px;
+                    font-weight: 600;
+                }
+            }
+            .qtyandcartbtn{
+                display: flex;
+                align-items: center;
+                select{
+                    background-color: $grayColor;
+                    border: 1px solid $borderColor;
+                    border-radius: 10px;
+                    padding: 15px 30px;
+                    margin-right: 30px;
+                }
+                button{
+                    font-family: $primaryFont;
+                    font-weight: 700;
+                    color: #fff;
+                    font-size: 15px;
+                    line-height: 22.5px;
+                }
+            }
+        }
+        .other-action{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 25px 0px;
+            .favbtn{
+                color: $secondaryColor;
+                font-family: $primaryFont;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 22.5px;
+                padding: 5px;
+                display: flex;
+                align-items: center;
+                .favicon{
+                    color: #E5704B;
+                    margin-right: 10px;
+                }
+            }
+            .comparebtn{
+                color: $secondaryColor;
+                font-family: $primaryFont;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 22.5px;
+                padding: 5px;
+                display: flex;
+                align-items: center;
+                margin-left: 50px;
+                .compareicon{
+                    color: #E5704B;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .product-tab{
+            margin-top: 50px;
+            .tab-header{
+                border-bottom: 1px solid $grayColor;
+                button{
+                    padding: 7px 25px 7px 5px;
+                   
+                    margin: 0px 10px;
+                    color: $secondaryColor;
+                    font-weight: 600;
+                    font-family: $primaryFont;
+                    font-size: 18px;
+    
+                    &:first-child{
+                        margin: 0px;
+                    }
+                    .total-products-reviews,
+                    .total-product-question{
+                        background-color: #F4F8EC;
+                        color: $primaryColor;
+                        font-size: 600;
+                        font-size: 12px;
+                        border-radius: 10px;
+                        padding: 5px;
+                        margin-left: 15px;
+                    }
+                }
+                .tab-active{
+                    border-bottom: 1px solid $primaryColor;
+                }
+            }
+            .description-tab-content{
+                padding-top: 50px;
+                h4{
+                    font-family: $primaryFont;
+                    font-weight: 500;
+                    color: $secondaryColor;
+                    font-size: 15px;
+                    line-height: 22.5px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-family: $secondaryFont;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    margin-bottom: 15px;
+                    text-align: justify;
+                }
+                table{
+                    width: 100%;
+                    border-collapse: collapse;
+                    thead{
+                        tr{
+                            th{
+                                text-align: left;
+                                padding: 10px;
+                                font-family: $primaryFont;
+                                font-size: 12px;
+                                font-weight: 600;
+                                line-height: 18px;
+                            }
+                            border-bottom: 1px solid $grayColor;
+                        }
+                    }
+                    tbody{
+                        tr{
+                          
+                          td{
+                              padding: 10px;
+                              color: #575757;
+                              font-family: $secondaryFont;
+                              font-size: 14px;
+
+                          }
+                          &:nth-child(even){
+                            background-color: $grayColor;
+                          }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

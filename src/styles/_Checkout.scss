@@ -1,0 +1,503 @@
+.checkout {
+  padding: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  &__left {
+    width: 670px;
+    .billing-info {
+      .input-field-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .input-field {
+          width: 320px;
+          margin: 13px 0;
+          label {
+            display: block;
+            font-size: 12px;
+            line-height: 25px;
+            font-family: $primaryFont;
+            font-weight: 600;
+            color: $secondaryColor;
+          }
+          input {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid $borderColor;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: $lightColor;
+            background-color: $grayColor;
+          }
+        }
+      }
+      .diff-address {
+        width: 250px;
+        background-color: $grayColor;
+        padding: 10px 20px;
+        border: 1px solid $borderColor;
+        border-radius: 12px;
+        margin-top: 20px;
+        display: flex;
+        input {
+          height: 20px;
+          width: 20px;
+          &:checked {
+            background-color: $primaryColor;
+            appearance: none;
+            -webkit-appearance: none;
+            color: white;
+          }
+        }
+        label {
+          font-size: 14px;
+          margin-left: 5px;
+          font-weight: 400;
+          font-family: $secondaryFont;
+          color: $secondaryColor;
+        }
+      }
+    }
+    .billing-method {
+      margin: 50px 0;
+      &__item {
+        width: 100%;
+        margin: 20px 0;
+        background-color: $grayColor;
+        border: 1px solid $borderColor;
+        padding: 10px 20px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        &__left {
+          width: 25%;
+          input {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            vertical-align: middle;
+            border: 1px solid #ddd;
+            appearance: none;
+            -webkit-appearance: none;
+            outline: none;
+            cursor: pointer;
+            &:checked {
+              border: 4px solid $primaryColor;
+            }
+          }
+          label {
+            font-size: 12px;
+            font-weight: 600;
+            font-family: $primaryFont;
+            color: $secondaryColor;
+            margin-left: 10px;
+          }
+        }
+        &__middle {
+          width: 50%;
+          p {
+            font-size: 12px;
+            font-weight: 600;
+            font-family: $primaryFont;
+            color: $secondaryColor;
+            span {
+              color: $primaryColor;
+              margin-right: 10px;
+            }
+          }
+        }
+        &__right {
+          width: 25%;
+          img {
+            height: 16px;
+          }
+        }
+      }
+    }
+    .payment-method {
+      .credit-card-method {
+        margin: 20px 0;
+        padding: 16px;
+        border: 1px solid $borderColor;
+        border-radius: 12px;
+        &__title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          label {
+            font-size: 12px;
+            font-weight: 600;
+            color: $secondaryColor;
+            font-family: $primaryFont;
+            input {
+              margin-right: 10px;
+              font-size: 15px;
+            }
+          }
+          img {
+            width: 95px;
+            height: 20px;
+          }
+        }
+        .card-number-input {
+          label {
+            margin: 20px 0;
+            display: block;
+            color: $secondaryColor;
+            font-size: 12px;
+            font-weight: 600;
+            font-family: $primaryFont;
+            input {
+              display: block;
+              width: 100%;
+              background-color: $grayColor;
+              border: 1px solid $borderColor;
+              border-radius: 12px;
+              font-size: 14px;
+              font-family: $secondaryFont;
+              padding: 10px 20px;
+            }
+          }
+        }
+        .card-hdc {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          label {
+            display: block;
+            color: $secondaryColor;
+            font-size: 12px;
+            font-weight: 600;
+            font-family: $primaryFont;
+            input {
+              display: block;
+              width: 100%;
+              background-color: $grayColor;
+              border: 1px solid $borderColor;
+              border-radius: 12px;
+              font-size: 14px;
+              font-family: $secondaryFont;
+              padding: 10px 20px;
+            }
+          }
+          label:nth-of-type(1) {
+            width: 350px;
+          }
+          label:nth-of-type(2) {
+            width: 120px;
+          }
+          label:nth-of-type(3) {
+            width: 120px;
+          }
+        }
+      }
+      .payment-method-card {
+        background-color: $grayColor;
+        padding: 15px 20px;
+        border-radius: 12px;
+        border: 1px solid $borderColor;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        label {
+          font-size: 12px;
+          font-weight: 600;
+          color: $secondaryColor;
+          font-family: $primaryFont;
+          input {
+            margin-right: 15px;
+          }
+        }
+        img {
+          height: 20px;
+          width: 80px;
+        }
+      }
+    }
+    .additional-info {
+      .additional-info-des {
+        margin-top: 20px;
+        label {
+          font-size: 12px;
+          font-weight: 600;
+          color: $secondaryColor;
+          font-family: $primaryFont;
+          textarea {
+            display: block;
+            width: 100%;
+            height: 112px;
+            border: 1px solid $borderColor;
+            background: $grayColor;
+            border-radius: 12px;
+            font-size: 14px;
+            padding: 11px 21px;
+            color: $lightColor;
+            font-family: $secondaryFont;
+            resize: none;
+          }
+        }
+      }
+    }
+    .confirmation {
+      .condition-box {
+        padding: 11px 18px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        background-color: $grayColor;
+        border: 1px solid $borderColor;
+        margin: 15px 0;
+        input {
+          margin-right: 15px;
+          height: 20px;
+          width: 20px;
+        }
+        label {
+          font-family: $secondaryFont;
+          font-weight: 400;
+          font-size: 14px;
+          color: $secondaryColor;
+          a {
+            text-decoration: underline;
+            color: $secondaryColor;
+          }
+        }
+      }
+      .complate-order-btn {
+        display: inline-block;
+        margin: 20px 0;
+        height: 56px;
+        background-color: $primaryColor;
+        border: 2px solid #46760a;
+        border-radius: 12px;
+        padding: 12px 48px;
+        line-height: 22px;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: $primaryFont;
+        color: white;
+        cursor: pointer;
+      }
+      .security-safety {
+        width: 220px;
+        img {
+          width: 28px;
+          height: 26px;
+        }
+        h5 {
+          font-size: 12px;
+          line-height: 18px;
+          color: $secondaryColor;
+          font-family: $primaryFont;
+        }
+        p {
+          font-family: $secondaryFont;
+          color: $lightColor;
+          font-size: 12px;
+        }
+      }
+      .copyright {
+        padding: 64px 45px 0 64px;
+      }
+    }
+  }
+
+  &__right {
+    width: 468px;
+    .order-summery {
+      border: 1px solid $borderColor;
+      border-radius: 12px;
+      padding: 32px 16px;
+      &__title {
+        h3 {
+          color: $secondaryColor;
+          font-family: $primaryFont;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 33px;
+        }
+        p {
+          color: $lightColor;
+          line-height: 16px;
+          font-size: 12px;
+          font-family: $secondaryFont;
+        }
+      }
+      .single-order {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0;
+        &__left {
+          width: 20%;
+          img {
+            width: 100%;
+            height: 67px;
+            border-radius: 12px;
+          }
+          .wishlist,
+          .compare,
+          .remove {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            img {
+              height: 20px;
+              width: 20px;
+              margin-right: 10px;
+            }
+          }
+        }
+        &__right {
+          width: 70%;
+          h4 {
+            font-family: $primaryFont;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            color: $secondaryColor;
+          }
+          p {
+            color: $secondaryColor;
+            font-family: $secondaryFont;
+            span {
+              color: $lightColor;
+              width: 100px;
+              display: inline-block;
+            }
+          }
+          .review {
+            margin-top: 10px;
+            .material-icons {
+              color: #fdbc15;
+              width: 13px;
+              height: 13px;
+              margin-right: 10px;
+            }
+            .material-icons.star-outline {
+              color: #ebebeb;
+            }
+          }
+          .price-quantity {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+            .price {
+              h3 {
+                color: $primaryColor;
+                font-weight: 600;
+                font-family: $primaryFont;
+                font-size: 18px;
+                line-height: 27px;
+              }
+              del {
+                color: $lightColor;
+                font-family: $primaryFont;
+                font-size: 12px;
+                font-weight: 600;
+                line-height: 18px;
+              }
+            }
+            .quantity {
+              border: 1px solid $borderColor;
+              padding: 7px;
+              border-radius: 12px;
+              background-color: $grayColor;
+              color: $secondaryColor;
+              font-size: 14px;
+              line-height: 19px;
+              font-family: $secondaryFont;
+            }
+          }
+        }
+      }
+      h4 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $secondaryColor;
+        line-height: 18px;
+        font-size: 12px;
+        font-weight: 600;
+        font-family: $primaryFont;
+      }
+      .promo-input {
+        background-color: $grayColor;
+        border: 1px solid $borderColor;
+        border-radius: 12px;
+        margin: 30px 0;
+        input {
+          width: 70%;
+          padding: 12px 32px;
+          border: none;
+          background-color: transparent;
+          outline: none;
+        }
+        button {
+          width: 30%;
+          background-color: transparent;
+          color: $secondaryColor;
+          font-size: 15px;
+          padding: 12px;
+          line-height: 22px;
+          font-family: $primaryFont;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+      &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__left {
+          h3 {
+            color: $secondaryColor;
+            font-family: $primaryFont;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+          }
+          p {
+            color: $primaryColor;
+            font-size: 12px;
+            line-height: 16px;
+            font-family: $secondaryFont;
+            font-weight: normal;
+          }
+        }
+        &__right {
+          h2 {
+            color: $primaryColor;
+            font-family: $primaryFont;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 39px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.info__title {
+  h3 {
+    color: $secondaryColor;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 8px;
+  }
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $lightColor;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: $secondaryFont;
+  }
+}
